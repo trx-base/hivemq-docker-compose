@@ -10,6 +10,4 @@ services:
     image: hivemq/hivemq-ce:2023.1
     ports:
       - 1883:1883
-    volumes:
-      - ./config.xml:/opt/hivemq-ce-2023.1/conf/config.xml
     restart: unless-stopped
