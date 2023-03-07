@@ -1,3 +1,2 @@
-FROM hivemq/hivemq-ce:2023.1
-RUN chmod -R 755 /opt/hivemq
+FROM hivemq/hivemq-operator:4.7.9
 
