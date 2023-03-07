@@ -1,8 +1,8 @@
-version: '3.8'
+version: "3.8"
 
 networks:
   default:
-    name: traefik-default
+    name: hivemq-network
 
 services:
   hivemq:
@@ -10,6 +10,4 @@ services:
     image: trxbase/hivemq-decoupled-config:2023.1
     ports:
       - 1883:1883
-    volumes:
-      - "./config.xml:/opt/trxbroker/conf/config.xml"
     restart: unless-stopped
