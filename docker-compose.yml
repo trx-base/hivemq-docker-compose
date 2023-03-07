@@ -11,5 +11,5 @@ services:
     ports:
       - 1883:1883
     volumes:
-      - "./config.xml:/opt/hivemq/conf/config.xml"
+      - "./config.xml:/opt/trxbroker/conf/config.xml"
     restart: unless-stopped
