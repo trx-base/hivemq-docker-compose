@@ -10,4 +10,6 @@ services:
     image: trxbase/hivemq-decoupled-config:2023.1
     ports:
       - 1883:1883
+    volumes:
+      - "./config.xml:/opt/hivemq/conf/config.xml"
     restart: unless-stopped
