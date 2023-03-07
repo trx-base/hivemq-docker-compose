@@ -7,7 +7,7 @@ networks:
 services:
   hivemq:
     container_name: $COMPOSE_PROJECT_NAME
-    image: hivemq/hivemq-ce:2023.1
+    image: trxbase/hivemq-decoupled-config:2023.1
     ports:
       - 1883:1883
     restart: unless-stopped
