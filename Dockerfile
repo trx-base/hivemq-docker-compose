@@ -1,2 +1,1 @@
-FROM hivemq/hivemq-operator:4.7.9
-
+FROM hivemq/hivemq-ce:2023.1
