@@ -3,7 +3,7 @@ type: docker
 name: default
 
 steps:
-  - name: docker
+  - name: publish
     image: plugins/docker
     settings:
       username:
@@ -11,7 +11,9 @@ steps:
       password:
         from_secret: docker_password
       repo: trx-base/hivemq-decoupled-config
-      tags: latest, 2023.1
+      tags: 
+        - latest 
+        - 2023.1
 
 
 
