@@ -10,7 +10,7 @@ steps:
         from_secret: docker_username
       password:
         from_secret: docker_password
-      repo: trx-base/hivemq-decoupled-config
+      repo: trxbase/hivemq-decoupled-config
       tags: 
         - latest 
         - 2023.1
