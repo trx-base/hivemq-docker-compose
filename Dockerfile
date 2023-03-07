@@ -1,6 +1,3 @@
 FROM hivemq/hivemq-ce:2023.1
-WORKDIR /
 RUN mkdir -p /opt/trxbroker
-RUN ls -la /opt/
-COPY /opt/hivemq/conf /opt/trxbroker/conf
-COPY /opt/hivemq/extensions /opt/trxbroker/extensions
+RUN cp -r /opt/hivemq/ /opt/trxbroker/
